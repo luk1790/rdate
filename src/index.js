@@ -1,13 +1,13 @@
-import {format} from './format';
+var format = require("./format");
 
-
-
-export default class rDate extends Date {
+var rDate = class rDate extends Date {
   constructor(dateStr) {
     super(dateStr);
   }
 
   format(formatDate) {
-    return format(formatDate);
+    return format(this, formatDate);
   }
-}
+};
+
+module.exports = rDate;
