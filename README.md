@@ -5,7 +5,7 @@
 
 Sample:
 ```javascript
- new rDate([10, 12, 1990]).format('MM-DD-YY')
+ format(new rDate([10, 12, 1990]),'MM-DD-YY')
 ```
 options:
 - `'MM'` - months
