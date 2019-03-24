@@ -25,4 +25,14 @@ describe('Format',()=>{
       const date = new Date('17-01-1990');
       expect(format(date)).toBeFalsy();
     });
+    it('is invalid parameter of date', ()=>{
+      expect(format('17-01-1990')).toBeFalsy();
+      expect(format(1000)).toBeFalsy();
+    });
+    it('is invalid parameter of format', ()=>{
+      const date = new Date('1990/01/17');
+      expect(format(date, 'dd')).toBeFalsy();
+      expect(format(date, 10)).toBeFalsy();
+      expect(format(date, {format: 'dd'})).toBeFalsy();
+    });
   });
