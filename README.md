@@ -36,3 +36,20 @@ Sample:
 ```
 
 result: number in miliseconds
+
+### - isValidDate()
+
+
+```javascript
+isValidDate(date)
+```
+options:
+- date - date in text 
+
+
+Sample:
+```javascript
+ isValidDate('1990/01/17')
+```
+
+result: true or false
