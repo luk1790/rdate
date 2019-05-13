@@ -18,5 +18,7 @@
     "eslint": "^5.15.3",
     "jest": "^24.5.0"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "jest"
+  }
 }

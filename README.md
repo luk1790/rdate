@@ -36,3 +36,39 @@ Sample:
 ```
 
 result: number in miliseconds
+
+### - isValidDate()
+
+
+```javascript
+isValidDate(date)
+```
+options:
+- date - date in text in format `'YYYY/MM/DD'`
+
+
+Sample:
+```javascript
+ isValidDate('1990/01/17')
+```
+
+result: true or false
+
+
+
+### - isToday()
+
+
+```javascript
+isToday(date)
+```
+options:
+- date - date in text in format `'YYYY/MM/DD'`
+
+
+Sample:
+```javascript
+ isToday('1990/01/17')
+```
+
+result: true or false
