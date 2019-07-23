@@ -1,11 +1,11 @@
 # rDate
 ## List of functions:
-+ [format](###format)
-+ [isEarlier](###isEarlier)
-+ [parseDate](###parseDate)
-+ [sub](###sub)
-+ [isToday](###isToday)
-+ [isValidDate](###isValidDate)
++ [format](#--format)
++ [isEarlier](#--isEarlier)
++ [parseDate](#--parseDate)
++ [sub](#--sub)
++ [isToday](#--isToday)
++ [isValidDate](#--isValidDate)
 
 ## Functions
 ### - format()
