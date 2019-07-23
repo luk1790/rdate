@@ -1,6 +1,13 @@
 # rDate
-## Functions:
+## List of functions:
++ [format](###format)
++ [isEarlier](###isEarlier)
++ [parseDate](###parseDate)
++ [sub](###sub)
++ [isToday](###isToday)
++ [isValidDate](###isValidDate)
 
+## Functions
 ### - format()
 
 ```javascript
