@@ -1,14 +1,34 @@
 # rDate
 ## List of functions:
++ [daysInMonth](#--daysInMonth)
++ [duration](#--duration)
 + [format](#--format)
 + [isEarlier](#--isEarlier)
 + [isLater](#--isLater)
++ [isToday](#--isToday)
 + [parseDate](#--parseDate)
 + [sub](#--sub)
-+ [isToday](#--isToday)
 + [isValidDate](#--isValidDate)
 
+
 ## Functions
+### - daysInMonth()
+
+```javascript
+daysInMonth(year, month)
+```
+
+options:
+- year - number
+- month - number
+
+Sample:
+```javascript
+ daysInMonth(2019,2)
+ // 28
+```
+result: numbers of days in month and year
+
 ### - format()
 
 ```javascript
@@ -133,3 +153,26 @@ Sample:
 ```
 
 result: true or false
+
+### - duration()
+
+
+```javascript
+duration(msValue, date)
+```
+options:
+- msValue - value in miliseconds
+- date - date in javaScript (`new Date()`) [optional]
+
+
+Sample:
+```javascript
+ duration(360000)
+ //{ day: 0, hour: 0, min: 6, sec: 0, ms: 0 }
+```
+```javascript
+ duration(360000, new Date('1990/01/17 10:00'))
+ //{ day: 0, hour: 0, min: 6, sec: 0, ms: 0, year: 0, month: 0 }
+```
+
+result: object with value of days, months, years, minutes, hours, seconds and miliseconds

@@ -6,7 +6,7 @@
  *
  */
 
-function isValidDate(date) {
+function validDate(date) {
   if(typeof date === "object") return false;
   let tableDate = date.split("/");
   let month = tableDate[1];
@@ -19,4 +19,4 @@ function isValidDate(date) {
   );
 }
 
-module.exports = isValidDate;
+module.exports = validDate;
