@@ -1,15 +1,34 @@
 # rDate
 ## List of functions:
++ [daysInMonth](#--daysInMonth)
++ [duration](#--duration)
 + [format](#--format)
 + [isEarlier](#--isEarlier)
 + [isLater](#--isLater)
++ [isToday](#--isToday)
 + [parseDate](#--parseDate)
 + [sub](#--sub)
-+ [isToday](#--isToday)
 + [isValidDate](#--isValidDate)
-+ [duration](#--duration)
+
 
 ## Functions
+### - daysInMonth()
+
+```javascript
+daysInMonth(year, month)
+```
+
+options:
+- year - number
+- month - number
+
+Sample:
+```javascript
+ daysInMonth(2019,2)
+ // 28
+```
+result: numbers of days in month and year
+
 ### - format()
 
 ```javascript

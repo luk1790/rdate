@@ -11,7 +11,6 @@ describe("duration", () => {
     const variables = [869230100, 899230500, 877230700, 100];
     variables.forEach(value => {
       const result = duration(value);
-      console.log(result)
       expect(
         result.day * day +
           result.hour * hour +
