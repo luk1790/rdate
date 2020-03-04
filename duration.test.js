@@ -1,5 +1,5 @@
-var duration = require("./duration");
-var sub = require('./subtraction');
+const duration = require("./duration");
+const sub = require('./subtraction');
 
 describe("duration", () => {
   const sec = 1000;
@@ -21,10 +21,10 @@ describe("duration", () => {
     });
   });
   it("check parsing miliseconds from date", () => {
-      var date1 =  new Date('1990/01/11 17:01:10');
-      var date2 =  new Date('1990/03/01 17:01:10');
-      var date3 =  new Date('1990/01/31 23:00:00');
-      var date4 =  new Date('1991/01/31 23:00:00');
+      const date1 =  new Date('1990/01/11 17:01:10');
+      const date2 =  new Date('1990/03/01 17:01:10');
+      const date3 =  new Date('1990/01/31 23:00:00');
+      const date4 =  new Date('1991/01/31 23:00:00');
       const result = duration(sub(date2,date1), date1); 
       const result2 = duration(sub(date3,date1), date1); 
       const result3 = duration(sub(date4,date1), date1);

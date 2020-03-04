@@ -1,4 +1,4 @@
-var validDate = require('./validDate');
+const validDate = require('./validDate');
 describe('validDate', ()=>{
     it('is correct', ()=>{
         const date = '1990/01/17';

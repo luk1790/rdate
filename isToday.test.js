@@ -1,4 +1,4 @@
-var isToday = require('./isToday');
+const isToday = require('./isToday');
 describe('Today', ()=>{
     it('is today', ()=>{
         const today = new Date();

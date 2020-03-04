@@ -1,4 +1,4 @@
-var daysInMonth = require('./daysInMonth');
+const daysInMonth = require('./daysInMonth');
 
 describe('days in month', ()=>{
     it('check days in february 2019',()=>{
