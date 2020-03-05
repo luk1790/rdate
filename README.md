@@ -1,4 +1,4 @@
-# rDate
+# rDate ![npm](https://img.shields.io/npm/v/rdate)
 ## List of functions:
 + [daysInMonth](#--daysInMonth)
 + [duration](#--duration)
