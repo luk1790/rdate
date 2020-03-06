@@ -41,10 +41,14 @@ options:
     - `'MM'` - months
     - `'DD'` - days
     - `'YYYY'` / `'YY'` - years
+    - `'hh'` - hours
+    - `'mm'` - minutes
+    - `'ss'` - seconds
 
 Sample:
 ```javascript
- format(new rDate([10, 12, 1990]),'MM-DD-YY')
+ format(new Date('1990/01/17 12:30:45'),'MM-DD-YY hh:mm:ss')
+//  01-17-90 12:30:45
 ```
 
 ### - isEarlier()

@@ -10,8 +10,11 @@ var parseDate = require('./parseDate');
  */
 
 function isLater(firstDate, secondDate = new Date()) {
-    if(secondDate instanceof Date){
-        return (firstDate instanceof Date ? firstDate : parseDate(firstDate)) > secondDate;
+    if (secondDate instanceof Date) {
+        return (
+            (firstDate instanceof Date ? firstDate : parseDate(firstDate)) >
+            secondDate
+        );
     }
     return parseDate(firstDate) > parseDate(secondDate);
 }
