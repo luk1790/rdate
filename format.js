@@ -26,6 +26,9 @@ function format(date, format = 'DD-MM-YYYY') {
             .toString()
             .slice(2, 4)}`
     );
+    tempDate = tempDate.replace('hh', `${parseNumber(date.getHours())}`);
+    tempDate = tempDate.replace('mm', `${parseNumber(date.getMinutes())}`);
+    tempDate = tempDate.replace('ss', `${parseNumber(date.getSeconds())}`);
 
     return tempDate === format.toString() ? false : tempDate;
 }

@@ -5,6 +5,10 @@ describe('Format', () => {
         const date = new Date('1990/01/17');
         expect(format(date, 'YYYY-MM-DD')).toBe('1990-01-17');
     });
+    it('check format YYYY-MM-DD hh:mm:ss', () => {
+        const date = new Date('1990/01/17 12:30:45');
+        expect(format(date, 'YYYY-MM-DD hh:mm:ss')).toBe('1990-01-17 12:30:45');
+    });
     it('check format DD', () => {
         const date = new Date('1990/01/17');
         expect(format(date, 'DD')).toBe('17');
