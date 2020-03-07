@@ -1,4 +1,13 @@
 # rDate ![npm](https://img.shields.io/npm/v/rdate)
+rDate is javascript library for manipulate date
+## Example Usage
+```javascript
+const duration = require('rdate/duration') 
+``` 
+or 
+```javascript
+import duration from 'rdate/duration'
+```
 ## List of functions:
 + [daysInMonth](#--daysInMonth)
 + [duration](#--duration)
