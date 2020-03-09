@@ -17,4 +17,4 @@ module.export = {
     parseDate,
     sub,
     validDate
-}
+};
