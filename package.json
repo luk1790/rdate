@@ -17,11 +17,13 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "jest": "^24.9.0",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "terser": "^4.6.6"
   },
   "scripts": {
     "test": "jest",
     "prettier": "prettier --check '*.js'",
-    "prettier:fix": "prettier --check '*.js' --write"
+    "prettier:fix": "prettier --check '*.js' --write",
+    "minify": "terser index.js -o index.min.js -c -m --toplevel"
   }
 }

@@ -1,4 +1,4 @@
-var parseDate = require('./parseDate');
+const parseDate = require('../parseDate');
 
 /**
  * check date is today

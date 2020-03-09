@@ -1,4 +1,4 @@
-var parseDate = require('./parseDate');
+const parseDate = require('./parseDate');
 describe('parseDate', () => {
     it('is correct data YYYY/MM/DD', () => {
         expect(parseDate('2020/10/01')).toMatchObject(new Date(2020, 9, 1));
