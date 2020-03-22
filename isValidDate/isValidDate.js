@@ -13,10 +13,6 @@ function isValidDate(date) {
     let day = tableDate[2];
     let year = tableDate[0];
     let newDate = new Date(parseInt(year), parseInt(month), 0);
-    console.log(year)
-    console.log(month)
-    console.log(newDate)
-    console.log(newDate.getDate())
     return (
         newDate.getDate() >= parseInt(day) &&
         newDate.getMonth() === parseInt(month) - 1
