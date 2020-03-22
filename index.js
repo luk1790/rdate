@@ -17,5 +17,5 @@ module.exports = {
     isToday,
     parseDate,
     sub,
-    isValidDate
+    isValidDate,
 };
