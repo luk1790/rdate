@@ -1,13 +1,14 @@
-const daysInMonth = require('./src/daysInMonth');
-const duration = require('./src/duration');
-const format = require('./src/format');
-const isEarlier = require('./src/isEarlier');
-const isLater = require('./src/isLater');
-const isToday = require('./src/isToday');
-const parseDate = require('./src/parseDate');
-const sub = require('./src/sub');
-const validDate = require('./src/validDate');
-module.export = {
+const daysInMonth = require('./daysInMonth');
+const duration = require('./duration');
+const format = require('./format');
+const isEarlier = require('./isEarlier');
+const isLater = require('./isLater');
+const isToday = require('./isToday');
+const parseDate = require('./parseDate');
+const sub = require('./sub');
+const isValidDate = require('./isValidDate');
+
+module.exports = {
     daysInMonth,
     duration,
     format,
@@ -16,5 +17,5 @@ module.export = {
     isToday,
     parseDate,
     sub,
-    validDate
+    isValidDate
 };

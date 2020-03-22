@@ -1,7 +1,7 @@
 {
   "name": "rdate",
-  "version": "1.1.1",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Library to manipulate date",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -17,13 +17,11 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "jest": "^24.9.0",
-    "prettier": "1.19.1",
-    "terser": "^4.6.6"
+    "prettier": "1.19.1"
   },
   "scripts": {
     "test": "jest",
     "prettier": "prettier --check '*.js'",
-    "prettier:fix": "prettier --check '*.js' --write",
-    "minify": "terser index.js -o index.min.js -c -m --toplevel"
+    "prettier:fix": "prettier --check '*.js' --write"
   }
 }

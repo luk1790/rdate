@@ -6,17 +6,21 @@
  *
  */
 
-function validDate(date) {
+function isValidDate(date) {
     if (typeof date === 'object') return false;
     let tableDate = date.split('/');
     let month = tableDate[1];
     let day = tableDate[2];
     let year = tableDate[0];
     let newDate = new Date(parseInt(year), parseInt(month), 0);
+    console.log(year)
+    console.log(month)
+    console.log(newDate)
+    console.log(newDate.getDate())
     return (
-        newDate.getDate() > parseInt(day) &&
+        newDate.getDate() >= parseInt(day) &&
         newDate.getMonth() === parseInt(month) - 1
     );
 }
 
-module.exports = validDate;
+module.exports = isValidDate;
