@@ -1,4 +1,4 @@
-var sub = require('./subtraction');
+const sub = require('./subtraction');
 
 describe('subtraction', () => {
     it('is correct', () => {

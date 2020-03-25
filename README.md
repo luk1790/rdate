@@ -2,10 +2,12 @@
 rDate is javascript library for manipulate date
 ## Example Usage
 ```javascript
+const { duration } = require('rdate') 
 const duration = require('rdate/duration') 
 ``` 
 or 
 ```javascript
+import { duration } from 'rdate'
 import duration from 'rdate/duration'
 ```
 ## List of functions:
@@ -74,9 +76,11 @@ options:
 
 Sample:
 ```javascript
- isEarlier(new rDate([17, 10, 1990]),new rDate([17, 12, 1990]))
+ isEarlier(new Date(1990, 10, 17),new Date(1990,12,17))
+ // true
 
- isEarlier(new rDate([17, 1, 1990]))
+ isEarlier(new Date(1990, 1, 17))
+ // false
 ```
 
 ### - isLater()
@@ -93,9 +97,11 @@ options:
 
 Sample:
 ```javascript
- isLater(new rDate([17, 10, 1990]),new rDate([17, 12, 1990]))
+ isLater(new Date(1990, 12, 17),new Date(1990, 10, 17))
+ // true
 
- isLater(new rDate([17, 1, 1990]))
+ isLater(new Date(1990,1,17))
+ // false
 ```
 
 ### - parseDate()
@@ -127,7 +133,11 @@ options:
 
 Sample:
 ```javascript
- sub(new rDate([10, 12, 1990]),new rDate([10, 12, 1990]))
+ sub(new Date(1990,12,10),new Date(1990,12,10))
+ // 0
+
+ sub(new Date(1990,12,11),new Date(1990,12,10))
+ // 86400000
 ```
 
 result: number in miliseconds
@@ -146,6 +156,7 @@ options:
 Sample:
 ```javascript
  isToday('1990/01/17')
+ // false
 ```
 
 result: true or false
@@ -163,6 +174,13 @@ options:
 Sample:
 ```javascript
  isValidDate('1990/01/17')
+ // true
+
+ isValidDate('1990-01-17')
+ // false
+
+ isValidDate('2020/03/32')
+ // false
 ```
 
 result: true or false

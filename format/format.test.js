@@ -1,4 +1,4 @@
-var format = require('./format');
+const format = require('./format');
 
 describe('Format', () => {
     it('check format YYYY-MM-DD', () => {

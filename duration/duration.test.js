@@ -1,5 +1,5 @@
-var duration = require('./duration');
-var sub = require('./subtraction');
+const duration = require('./duration');
+const sub = require('../sub');
 
 describe('duration', () => {
     const sec = 1000;

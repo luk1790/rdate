@@ -1,4 +1,4 @@
-var isEarlier = require('./isEarlier');
+const isEarlier = require('./isEarlier');
 describe('isEarlier', () => {
     describe('check with date now', () => {
         it('is earlier than today', () => {

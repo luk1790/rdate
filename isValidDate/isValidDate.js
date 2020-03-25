@@ -6,7 +6,7 @@
  *
  */
 
-function validDate(date) {
+function isValidDate(date) {
     if (typeof date === 'object') return false;
     let tableDate = date.split('/');
     let month = tableDate[1];
@@ -14,9 +14,9 @@ function validDate(date) {
     let year = tableDate[0];
     let newDate = new Date(parseInt(year), parseInt(month), 0);
     return (
-        newDate.getDate() > parseInt(day) &&
+        newDate.getDate() >= parseInt(day) &&
         newDate.getMonth() === parseInt(month) - 1
     );
 }
 
-module.exports = validDate;
+module.exports = isValidDate;
