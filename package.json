@@ -1,6 +1,6 @@
 {
   "name": "rdate",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Library to manipulate date",
   "main": "index.js",
   "repository": {
@@ -13,6 +13,9 @@
     "url": "https://github.com/luk1790/rDate/issues"
   },
   "homepage": "https://github.com/luk1790/rDate#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@luk1790"
+  },
   "dependencies": {},
   "devDependencies": {
     "eslint": "^7.22.0",
