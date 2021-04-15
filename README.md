@@ -1,5 +1,6 @@
 # rDate ![npm](https://img.shields.io/npm/v/rdate)
 rDate is javascript library for manipulate date
+
 ## Example Usage
 ```javascript
 const { duration } = require('rdate') 
