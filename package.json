@@ -25,6 +25,7 @@
   "scripts": {
     "test": "jest",
     "prettier": "prettier --check '*.js'",
-    "prettier:fix": "prettier --check '*.js' --write"
+    "prettier:fix": "prettier --check '*.js' --write",
+    "changeLog": "git describe --tags --abbrev=0 >> CHANGELOG.md && git log $(git describe --tags --abbrev=0)..HEAD --pretty=\"- %s\" >> CHANGELOG.md"
   }
 }
