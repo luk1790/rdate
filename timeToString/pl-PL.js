@@ -1,5 +1,5 @@
 var hours = [
-    '',
+    'zero',
     'pierwsza',
     'druga',
     'trzecia',
@@ -62,18 +62,6 @@ var teens = [
     'osiemnaście',
     'dziewiętnaście',
 ];
-// var hundreds = [
-//     '',
-//     'sto',
-//     'dwieście',
-//     'trzysta',
-//     'czterysta',
-//     'pięćset',
-//     'sześćset',
-//     'siedemset',
-//     'osiemset',
-//     'dziewięćset',
-// ];
 
 function getTranslations(type) {
     let parseArraytoObject = (array) =>
@@ -89,17 +77,14 @@ function getTranslations(type) {
             minutes: parseArraytoObject(minutes),
             tens: parseArraytoObject(tens),
             teens: parseArraytoObject(teens),
-            // hundreds: parseArraytoObject(hundreds),
         };
     }
     if (type === 'array') {
         return {
             hours,
             minutes,
-            // units,
             tens,
             teens,
-            // hundreds,
         };
     }
 }

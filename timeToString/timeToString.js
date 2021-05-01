@@ -14,7 +14,10 @@ function timeToString(time, lang = 'pl') {
     if (allDictionary[lang]) {
         let dictionary = allDictionary[lang];
         let [hours, minutes] = time.split(':');
-        let stringTime = { hour: dictionary.hours[hours], minutes: '' };
+        let stringTime = {
+            hour: dictionary.hours[parseInt(hours, 10)],
+            minutes: '',
+        };
         if (minutes > 9 && minutes < 20) {
             stringTime.minutes = dictionary.teens[minutes % 10];
         } else {
@@ -23,7 +26,13 @@ function timeToString(time, lang = 'pl') {
                 dictionary.minutes[minutesString[1]]
             }`;
         }
-        return `${stringTime.hour} ${stringTime.minutes}`;
+        if (lang === 'pl') {
+            return `godzina ${stringTime.hour} minut ${stringTime.minutes}`.replace(
+                '  ',
+                ' '
+            );
+        }
+        return `${stringTime.hour} ${stringTime.minutes}`.replace('  ', ' ');
     }
 }
 

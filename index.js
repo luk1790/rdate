@@ -19,5 +19,5 @@ module.exports = {
     parseDate,
     sub,
     isValidDate,
-    timeToString
+    timeToString,
 };
