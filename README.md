@@ -21,6 +21,7 @@ import duration from 'rdate/duration'
 + [parseDate](#--parseDate)
 + [sub](#--sub)
 + [isValidDate](#--isValidDate)
++ [timeToString](#--timeToString)
 
 
 ## Functions
@@ -208,3 +209,22 @@ Sample:
 ```
 
 result: object with value of days, months, years, minutes, hours, seconds and miliseconds
+
+### - timeToString()
+
+
+```javascript
+timeToString(time, lang)
+```
+options:
+- time - string in `format: HH:MM`
+- lang - string (`default: pl`) [optional]
+
+
+Sample:
+```javascript
+ timeToString('11:29')
+ //godzina jedynasta minut dwadzieścia dziewięć
+```
+
+result: string 
