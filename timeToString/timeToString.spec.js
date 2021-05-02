@@ -9,4 +9,7 @@ describe('timeToString', () => {
          expect(timeToString('00:45')).toBe('godzina zero minut czterdzieści pięć')
          expect(timeToString('00:00')).toBe('godzina zero minut zero')
     });
+    it('check if lang is not support', ()=>{
+        expect(timeToString('11:29', 'en')).toBeUndefined()
+    })
 });
