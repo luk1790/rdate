@@ -7,6 +7,7 @@ const isToday = require('./isToday');
 const parseDate = require('./parseDate');
 const sub = require('./sub');
 const isValidDate = require('./isValidDate');
+const timeToString = require('./timeToString');
 
 module.exports = {
     daysInMonth,
@@ -18,4 +19,5 @@ module.exports = {
     parseDate,
     sub,
     isValidDate,
+    timeToString,
 };
