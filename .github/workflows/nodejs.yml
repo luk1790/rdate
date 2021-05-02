@@ -20,9 +20,8 @@ jobs:
     - run: npm install
     - run: npm run prettier
     - run: npm test
-    - uses: ziishaned/jest-reporter-action@v0.0.1
+    - uses: artiomtr/jest-coverage-report-action@v1.2
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        test-command: "npm test"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
       env:
         CI: true
