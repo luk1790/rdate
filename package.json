@@ -1,6 +1,6 @@
 {
   "name": "rdate",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Library to manipulate date",
   "main": "index.js",
   "repository": {
