@@ -14,7 +14,7 @@ function betweenDate(startDate, endDate) {
         result.month = result.month - 1;
 
         result.day =
-            daysInMonth(startDate.getFullYear(), startDate.getMonth()) -
+            daysInMonth(startDate.getFullYear(), startDate.getMonth()+1) -
             startDate.getDate() +
             endDate.getDate();
     } else {

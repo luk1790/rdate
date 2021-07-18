@@ -9,7 +9,7 @@ describe('duration', () => {
 
     it('check parsing miliseconds', () => {
         const variables = [869230100, 899230500, 877230700, 100];
-        variables.forEach(value => {
+        variables.forEach((value) => {
             const result = duration(value);
             expect(
                 result.day * day +
@@ -35,7 +35,7 @@ describe('duration', () => {
             sec: 0,
             ms: 0,
             year: 0,
-            month: 1
+            month: 1,
         });
         expect(result2).toEqual({
             day: 20,
@@ -44,7 +44,7 @@ describe('duration', () => {
             sec: 50,
             ms: 0,
             year: 0,
-            month: 0
+            month: 0,
         });
         expect(result3).toEqual({
             day: 20,
@@ -53,7 +53,22 @@ describe('duration', () => {
             sec: 50,
             ms: 0,
             year: 1,
-            month: 0
+            month: 0,
+        });
+    });
+
+    it('check two dates', () => {
+        let startDate = new Date('2021/05/25 15:00');
+        let endDate = new Date('2021/07/18 15:20');
+        const result = duration(sub(endDate, startDate), startDate);
+        expect(result).toEqual({
+            day: 24,
+            hour: 0,
+            min: 20,
+            sec: 0,
+            ms: 0,
+            year: 0,
+            month: 1,
         });
     });
 });
