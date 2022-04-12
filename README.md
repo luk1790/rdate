@@ -18,6 +18,7 @@ import duration from 'rdate/duration';
 
 ## List of functions:
 
+-   [addition](#--addition)
 -   [daysInMonth](#--daysInMonth)
 -   [duration](#--duration)
 -   [format](#--format)
@@ -30,6 +31,26 @@ import duration from 'rdate/duration';
 -   [timeToString](#--timeToString)
 
 ## Functions
+### - addition()
+
+```javascript
+addition(date, { day, hour, minute, second, milisecond})
+```
+
+options:
+-  date - date in javaScript (`new Date()`)
+-  day - number 
+-  hour - number
+-  minute - number
+-  second - number
+-  milisecond - number
+
+Sample:
+```javascript
+ addition(new Date('1990/01/11'),{day: 2})
+ // 1990-01-12T23:00:00.000Z
+```
+result: new date with addition days/hours/minutes/seconds/miliseconds
 
 ### - daysInMonth()
 

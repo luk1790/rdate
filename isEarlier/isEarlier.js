@@ -16,7 +16,7 @@ function isEarlier(firstDate, secondDate = new Date()) {
             secondDate
         );
     }
-    return parseDate(firstDate) < parseDate(secondDate);
+    return parseDate(firstDate) < parseDate(secondDate)
 }
 
-module.exports = isEarlier;
+module.exports = isEarlier

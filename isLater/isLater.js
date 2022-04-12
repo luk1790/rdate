@@ -16,7 +16,7 @@ function isLater(firstDate, secondDate = new Date()) {
             secondDate
         );
     }
-    return parseDate(firstDate) > parseDate(secondDate);
+    return parseDate(firstDate) > parseDate(secondDate)
 }
 
-module.exports = isLater;
+module.exports = isLater
