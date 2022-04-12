@@ -2,18 +2,18 @@ module.exports = {
     env: {
         browser: true,
         node: true,
-        jest: true
+        jest: true,
     },
     extends: 'eslint:recommended',
     globals: {
         Atomics: 'readonly',
-        SharedArrayBuffer: 'readonly'
+        SharedArrayBuffer: 'readonly',
     },
     parserOptions: {
         ecmaVersion: 2018,
-        sourceType: 'module'
+        sourceType: 'module',
     },
     rules: {
-        semi: [2, 'always']
-    }
-}
+        semi: [2, 'always'],
+    },
+};

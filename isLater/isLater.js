@@ -1,4 +1,4 @@
-var parseDate = require('./parseDate')
+const parseDate = require('../parseDate');
 
 /**
  * check date is today
@@ -14,7 +14,7 @@ function isLater(firstDate, secondDate = new Date()) {
         return (
             (firstDate instanceof Date ? firstDate : parseDate(firstDate)) >
             secondDate
-        )
+        );
     }
     return parseDate(firstDate) > parseDate(secondDate)
 }
