@@ -1,3 +1,4 @@
+const addition = require('./addition');
 const daysInMonth = require('./daysInMonth');
 const duration = require('./duration');
 const format = require('./format');
@@ -10,6 +11,7 @@ const isValidDate = require('./isValidDate');
 const timeToString = require('./timeToString');
 
 module.exports = {
+    addition,
     daysInMonth,
     duration,
     format,
