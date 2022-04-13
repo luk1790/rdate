@@ -279,3 +279,23 @@ timeToString('11:29');
 ```
 
 result: string
+
+## Deployment
+A) github npm
+1. Zalogowac sie do npm login --scope=luk1790 --registry=https://npm.pkg.github.com przy pomocy username i tokena z ~/.npmrc
+2. package.json: 
+      "name": "@luk1790/rdate",
+      "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+      },
+3. npm publish
+
+B) npm
+1. Logowanie sie do npm login - login i haslo do npm
+2. package.json: 
+      "name": "rdate",
+      "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+      },
+3. npm publish
+
